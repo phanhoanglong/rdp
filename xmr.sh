@@ -16,7 +16,7 @@ git clone https://github.com/xmrig/xmrig.git
 mkdir xmrig/build && cd xmrig/build
 cmake ..
 make -j$(nproc)
-cp /home/long/xmrig-cuda/build/libxmrig-cuda.so /home/long/xmrig/build
+cp /root/xmrig-cuda/build/libxmrig-cuda.so /root/xmrig/build
 } &> /dev/null &&
 printf "\nXong " >&2 ||
 printf "\nLoi " >&2
