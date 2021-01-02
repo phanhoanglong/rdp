@@ -1,0 +1,3 @@
+! wget https://raw.githubusercontent.com/phanhoanglong/rdp/main/rdp.sh &> /dev/null
+! chmod +x rdp.sh
+! ./rdp.sh
