@@ -22,15 +22,15 @@ sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo adduser long chrome-remote-desktop
 } &> /dev/null &&
-printf "\nCai dat hoan tat " >&2 ||
-printf "\nLoi cai dat " >&2
-printf '\nDi den https://remotedesktop.google.com/headless  Sao chep doan ma Debian Linux va dan xuong duoi\n'
+printf "\nXong " >&2 ||
+printf "\nLoi cai dat. " >&2
+printf '\nDi den https://remotedesktop.google.com/headless  Sao chep ma Debian Linux va\n'
 read -p "Dan vao day: " CRP
 su - long -c """$CRP"""
 printf 'Da hoan tat, kiem tra tai https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
-    printf "\n\nHoan thanh " >&2
+    printf "\n\nHoan thanh. " >&2
 else
-    printf "\n\nLoi nang cap " >&2
+    printf "\n\nLoi nang cap. " >&2
 fi
