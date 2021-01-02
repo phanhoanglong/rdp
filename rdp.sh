@@ -23,18 +23,19 @@ sudo apt install nautilus nano -y
 sudo adduser long chrome-remote-desktop
 } &> /dev/null &&
 printf "\nXong " >&2 ||
-printf "\nLoi cai dat. " >&2
+printf "\nLoi " >&2
 printf '\nDi den https://remotedesktop.google.com/headless  Sao chep ma Debian Linux va\n'
 read -p "Dan vao day: " CRP
 su - long -c """$CRP"""
 printf 'Da hoan tat, kiem tra tai https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
+printf "Hoan thanh. " >&2
 minimum = int(input("Keep alive, don't writen any - min "))
 maximum = 10
 print("The List of Natural Numbers from {0} to {1} are".format(minimum, maximum)) 
 for i in range(minimum, maximum + 1):
     print (i, end = '  ') >&2
 else
-    printf "\n\nLoi nang cap. " >&2
+    printf "\n\nLoi. " >&2
 fi
