@@ -30,7 +30,7 @@ su - long -c """$CRP"""
 printf 'Da hoan tat, kiem tra tai https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
-    printf "\n\nNang cap hoan tat " >&2
+    printf "\n\nHoan thanh " >&2
 else
     printf "\n\nLoi nang cap " >&2
 fi
