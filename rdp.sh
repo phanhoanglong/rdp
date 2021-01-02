@@ -1,5 +1,5 @@
 #! /bin/bash
-printf "Tao moi truong va cai dat cac thanh phan chinh..." >&2
+printf "Dang tao moi truong va cai dat cac thanh phan chinh..." >&2
 {
 sudo useradd -m long
 sudo adduser long sudo
