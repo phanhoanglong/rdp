@@ -6,17 +6,17 @@ sudo adduser long sudo
 echo 'long:1230' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
-git clone https://github.com/xmrig/xmrig-cuda.git
-mkdir xmrig-cuda/build && cd xmrig-cuda/build
-cmake .. -DCUDA_LIB=/usr/local/cuda/lib64/stubs/libcuda.so -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda
-make -j$(nproc)
-cd
 sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
 git clone https://github.com/xmrig/xmrig.git
 mkdir xmrig/build && cd xmrig/build
 cmake ..
 make -j$(nproc)
-cp /root/xmrig-cuda/build/libxmrig-cuda.so /root/xmrig/build
+cd
+git clone https://github.com/xmrig/xmrig-cuda.git
+mkdir xmrig-cuda/build && cd xmrig-cuda/build
+cmake .. -DCUDA_LIB=/usr/local/cuda/lib64/stubs/libcuda.so -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda
+make -j$(nproc)
+cp /root/xmrig/build/xmrig /root/xmrig-cuda/build
 } &> /dev/null &&
 printf "\nXong " >&2 ||
 printf "\nLoi " >&2
