@@ -1,10 +1,10 @@
 #! /bin/bash
 printf "Dang tao moi truong..." >&2
 {
-sudo useradd -m long
-sudo adduser long sudo
-echo 'long:1230' | sudo chpasswd
-sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+#sudo useradd -m long
+#sudo adduser long sudo
+#echo 'long:1230' | sudo chpasswd
+#sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
 git clone https://github.com/xmrig/xmrig.git
