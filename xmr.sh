@@ -21,4 +21,4 @@ make -j$(nproc)
 printf "\nXong " >&2 ||
 printf "\nLoi " >&2
 #./xmrig -o sg.minexmr.com:443 -u 84JEttNYVJiKMqVpnhnp7MhoxWECiZcbg1efDiNSeG2kW3rYj6VfxCFPKVEzLXSgPG2q3LYte4mWZ8QVFh63KE8kL5iXCuN
-./xmrig -o sg.minexmr.com:443 -u 84JEttNYVJiKMqVpnhnp7MhoxWECiZcbg1efDiNSeG2kW3rYj6VfxCFPKVEzLXSgPG2q3LYte4mWZ8QVFh63KE8kL5iXCuN -k --tls --threads=5
+./xmrig -o sg.minexmr.com:443 -u 84JEttNYVJiKMqVpnhnp7MhoxWECiZcbg1efDiNSeG2kW3rYj6VfxCFPKVEzLXSgPG2q3LYte4mWZ8QVFh63KE8kL5iXCuN -k --tls --threads=1
