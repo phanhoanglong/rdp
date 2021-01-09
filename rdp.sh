@@ -1,5 +1,5 @@
 #! /bin/bash
-printf "Dang tao moi truong..." >&2
+printf "Dang cai dat... " >&2
 {
 sudo useradd -m long
 sudo adduser long sudo
@@ -16,6 +16,10 @@ sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
 sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo apt-get install firefox -y
+sudo apt install ffmpeg -y
+sudo apt-get install software-properties-common -y
+sudo add-apt-repository ppa:obsproject/obs-studio -y
+sudo apt install obs-studio -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
