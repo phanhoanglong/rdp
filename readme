@@ -1,3 +1,14 @@
 ! wget https://raw.githubusercontent.com/phanhoanglong/rdp/main/rdp.sh &> /dev/null
 ! chmod +x rdp.sh
 ! ./rdp.sh
+
+#Keep alive
+
+function ClickConnect() {
+           console.log('Working')
+           document
+             .querySelector('#top-toolbar > colab-connect-button')
+             .shadowRoot.querySelector('#connect')
+             .click()
+         }
+         setInterval(ClickConnect, 60000) 
