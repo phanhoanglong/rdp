@@ -2,8 +2,11 @@
 ! chmod +x rdp.sh
 ! ./rdp.sh
 
-#Keep alive
+! wget https://raw.githubusercontent.com/phanhoanglong/rdp/main/test.sh &> /dev/null
+! chmod +x test.sh
+! ./test.sh
 
+#Keep alive
 function ClickConnect() {
            console.log('Working')
            document
