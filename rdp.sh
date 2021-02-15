@@ -12,10 +12,10 @@ sudo apt install --assume-yes --fix-broken
 sudo DEBIAN_FRONTEND=noninteractive \
 apt install --assume-yes xfce4 desktop-base
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'  
-sudo apt install --assume-yes xscreensaver
-sudo systemctl disable lightdm.service
-sudo add-apt-repository ppa:mozillateam/ppa -y
-sudo apt-get install firefox -y
+#sudo apt install --assume-yes xscreensaver
+#sudo systemctl disable lightdm.service
+#sudo add-apt-repository ppa:mozillateam/ppa -y
+#sudo apt-get install firefox -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
