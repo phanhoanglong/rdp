@@ -1,3 +1,5 @@
+printf "Dang cai dat... " >&2
+{
 sudo adduser long chrome-remote-desktop
 } &> /dev/null &&
 printf "\nXong " >&2 ||
